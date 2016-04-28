@@ -1,0 +1,11 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" 
+	controllerName="gs.fin.financialstatement.display.controller.App" 
+	displayBlock="true" 
+	height="100%">
+	<App id="fioriContent" 
+		 busy="{view>/busy}" 
+		 busyIndicatorDelay="{view>/delay}">
+	</App>
+</mvc:View>
