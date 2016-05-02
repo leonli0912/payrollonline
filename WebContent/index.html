@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script id="sap-ui-bootstrap" type="text/javascript"
+	src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+	data-sap-ui-theme="sap_bluecrystal"
+	data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-libs="sap.m"
+	data-sap-ui-resourceroots='{
+            "payrollonline": "./"
+        }'>        >
+</script>
+<script>
+var app = new sap.m.App("myApp", {
+	initialPage: "id_payroll"
+});
+var myView = sap.ui.view({ 
+	id:"id_payroll",
+	type: sap.ui.core.mvc.ViewType.XML,
+    viewName: "payrollonline.view.payroll",
+  });
+
+// add both pages to the app
+app.addPage(myView);
+// place the app into the HTML document
+app.placeAt("content"); 
+</script>
 </head>
-<body>
+<body class="sapUiBody" id="content">
 
 </body>
 </html>
